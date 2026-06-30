@@ -1,6 +1,7 @@
 # # Nexus
 
-A Bloomberg Terminal–style financial dashboard. The frontend is a single self-contained HTML file (vanilla JavaScript, Chart.js, Leaflet) covering equities, options, fixed income, commodities, crypto, portfolio analytics, sentiment, and geopolitical risk across 29 modules.
+Nexus is a 29-module market terminal covering equities, options, fixed income, commodities, crypto, portfolio analytics, sentiment, and geopolitical risk. Everything markup, styles, and logic lives in one .html file.
+This makes it trivially portable: download the file, double-click it, and the terminal boots. It also makes it a useful teaching artifact for demonstrating that a serious-looking financial dashboard doesn't require a server stack to be functional most of what people associate with a "terminal" is UI density and data modeling, not backend complexity.
 
 ## Status
 
