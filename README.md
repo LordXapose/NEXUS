@@ -8,16 +8,6 @@ This makes it trivially portable: download the file, double-click it, and the te
 Frontend: complete, runs standalone with synthetic/demo data, no build step required.
 Backend: in progress.
 
-## Quick start (frontend only)
-
-```bash
-git clone https://github.com/LordXapose/nexus.git
-cd nexus
-open Nexus_v5.html   # or just double-click the file
-```
-
-No install step. The terminal boots immediately using built-in demo data generators, so it's fully interactive before any backend exists.
-
 ## Architecture
 
 ```
