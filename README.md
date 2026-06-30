@@ -20,7 +20,7 @@ No install step. The terminal boots immediately using built-in demo data generat
 ## Architecture
 
 ```
-Nexus_v5.html
+Nexus.html
 ├── <style>   — design tokens (CSS custom properties), layout, components
 ├── <body>    — 29 module panels, one <div class="module"> per screen
 └── <script>  — state, utilities, per-module init/render logic, boot sequence
@@ -58,25 +58,25 @@ Each module follows the same shape: `initX()` runs once and builds the dataset p
 
 ## Modules (29, across 10 nav groups)
 
-**Home** — Overview dashboard
+**Home** Overview dashboard
 
-**Markets** — Dashboard, Order Book, News & Macro
+**Markets** Dashboard, Order Book, News & Macro
 
-**Global Tracking** — All Traffic (map), Aircraft, Vessels
+**Global Tracking** All Traffic (map), Aircraft, Vessels
 
-**Risk & Analytics** — Aladdin Risk, Stress Test, Compliance, Monte Carlo
+**Risk & Analytics** Aladdin Risk, Stress Test, Compliance, Monte Carlo
 
-**New Modules** — Options Chain, Dark Pool, Macro Heat Map, Correlation Lab
+**New Modules** Options Chain, Dark Pool, Macro Heat Map, Correlation Lab
 
-**Intelligence** — Earnings Calendar, Short Interest Monitor, Insider Transactions, Sentiment Dashboard, Social Sentiment, Sector Rotation
+**Intelligence** Earnings Calendar, Short Interest Monitor, Insider Transactions, Sentiment Dashboard, Social Sentiment, Sector Rotation
 
-**Fixed Income** — Yield Curve, Bond Screener, Credit Spreads
+**Fixed Income** Yield Curve, Bond Screener, Credit Spreads
 
-**Commodities** — Commodities Dashboard, On-Chain Analytics, Futures Curve
+**Commodities** Commodities Dashboard, On-Chain Analytics, Futures Curve
 
-**Portfolio** — Backtester, Options P&L Calculator, Tax Lot Tracker
+**Portfolio** Backtester, Options P&L Calculator, Tax Lot Tracker
 
-**Global** — Geopolitical Risk Monitor, Trade Flow Map, FX Intervention Tracker
+**Global** Geopolitical Risk Monitor, Trade Flow Map, FX Intervention Tracker
 
 ## Tech stack
 
@@ -96,6 +96,3 @@ A Python backend will sit behind this frontend to:
 
 Every data-driven module is structured so swapping its synthetic generator for a real API call is a small, contained change — the rendering and state logic doesn't need to know where the data came from.
 
-## License
-
-MIT
