@@ -21,11 +21,6 @@ No install step. The terminal boots immediately using built-in demo data generat
 ## Architecture
 
 ```
-Nexus.html
-├── <style>   — design tokens (CSS custom properties), layout, components
-├── <body>    — 29 module panels, one <div class="module"> per screen
-└── <script>  — state, utilities, per-module init/render logic, boot sequence
-```
 
 ### Module system
 
@@ -81,11 +76,6 @@ Each module follows the same shape: `initX()` runs once and builds the dataset p
 
 ## Tech stack
 
-- Vanilla JavaScript (ES6+), no framework
-- [Chart.js 4.4.1](https://www.chartjs.org/) — charts, via CDN
-- [Leaflet 1.9.4](https://leafletjs.com/) — maps, via CDN
-- Google Fonts — Orbitron, Share Tech Mono
-- No npm dependencies, no build tooling
 
 ## Backend (planned)
 
