@@ -42,27 +42,43 @@ function switchModule(id, btn) {
 
 Each module follows the same shape: `initX()` runs once and builds the dataset plus the initial render, `renderX()` / `filterX()` redraw the DOM and charts on filter or dropdown changes, and Chart.js canvases handle all visualizations.
 
-## Modules (29, across 10 nav groups)
+Here's every topic explained in **one simple line**:
 
-**Home** Overview dashboard
-
-**Markets** Dashboard, Order Book, News & Macro
-
-**Global Tracking** All Traffic (map), Aircraft, Vessels
-
-**Risk & Analytics** Aladdin Risk, Stress Test, Compliance, Monte Carlo
-
-**New Modules** Options Chain, Dark Pool, Macro Heat Map, Correlation Lab
-
-**Intelligence** Earnings Calendar, Short Interest Monitor, Insider Transactions, Sentiment Dashboard, Social Sentiment, Sector Rotation
-
-**Fixed Income** Yield Curve, Bond Screener, Credit Spreads
-
-**Commodities** Commodities Dashboard, On-Chain Analytics, Futures Curve
-
-**Portfolio** Backtester, Options P&L Calculator, Tax Lot Tracker
-
-**Global** Geopolitical Risk Monitor, Trade Flow Map, FX Intervention Tracker
+| **Topic**                     | **Simple Definition**                                                         |
+| ----------------------------- | ----------------------------------------------------------------------------- |
+| **Overview Dashboard**        | A home screen showing the most important market and portfolio information.    |
+| **Markets Dashboard**         | Displays live prices of stocks, bonds, forex, crypto, and commodities.        |
+| **Order Book**                | Shows all current buy and sell orders for an asset.                           |
+| **News & Macro**              | Provides financial news and major economic updates affecting markets.         |
+| **All Traffic (Map)**         | Displays global movement of ships, planes, and other transportation on a map. |
+| **Aircraft**                  | Tracks airplanes and flights in real time.                                    |
+| **Vessels**                   | Tracks ships and cargo vessels around the world.                              |
+| **Aladdin Risk**              | Analyzes and measures the overall risk of an investment portfolio.            |
+| **Stress Test**               | Simulates how a portfolio performs during extreme market events.              |
+| **Compliance**                | Checks whether investments follow legal and internal rules.                   |
+| **Monte Carlo Simulation**    | Uses thousands of random scenarios to predict possible future outcomes.       |
+| **Options Chain**             | Lists all available call and put option contracts for a stock.                |
+| **Dark Pool**                 | Shows large private trades executed outside public stock exchanges.           |
+| **Macro Heat Map**            | Uses colors to show economic performance across countries or sectors.         |
+| **Correlation Lab**           | Measures how closely two assets move together.                                |
+| **Earnings Calendar**         | Shows upcoming dates when companies report financial results.                 |
+| **Short Interest Monitor**    | Tracks how many investors are betting a stock's price will fall.              |
+| **Insider Transactions**      | Displays stock buying and selling by company executives and insiders.         |
+| **Sentiment Dashboard**       | Measures whether news about an asset is mostly positive or negative.          |
+| **Social Sentiment**          | Analyzes public opinion from social media and online forums.                  |
+| **Sector Rotation**           | Shows how investment money is moving between different industries.            |
+| **Yield Curve**               | Displays interest rates for bonds with different maturities.                  |
+| **Bond Screener**             | Helps search and filter bonds based on selected criteria.                     |
+| **Credit Spreads**            | Measures the extra return investors demand for taking credit risk.            |
+| **Commodities Dashboard**     | Shows live prices of commodities like oil, gold, and wheat.                   |
+| **On-Chain Analytics**        | Analyzes blockchain data to understand cryptocurrency activity.               |
+| **Futures Curve**             | Shows futures prices for different delivery dates.                            |
+| **Backtester**                | Tests how an investment strategy would have performed in the past.            |
+| **Options P&L Calculator**    | Calculates the profit or loss of an options trade.                            |
+| **Tax Lot Tracker**           | Tracks individual investment purchases for tax reporting.                     |
+| **Geopolitical Risk Monitor** | Monitors global political events that could impact financial markets.         |
+| **Trade Flow Map**            | Visualizes the movement of goods and trade between countries.                 |
+| **FX Intervention Tracker**   | Tracks when central banks buy or sell currencies to influence exchange rates. |
 
 ## Tech stack
 
