@@ -2,6 +2,12 @@
 
 Flask-based API server that proxies market data from multiple providers (Polygon, Alpha Vantage, FRED, CoinGecko) to the Nexus terminal frontend.
 
+## Release
+
+- Version: `5.1.5`
+- GitHub repository: `https://github.com/LordXapose/NEXUS`
+- Tag: `v5.1.5`
+
 ---
 
 ## 📋 Requirements
