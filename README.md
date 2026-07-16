@@ -1,4 +1,4 @@
-# # Nexus
+# Nexus
 
 Nexus is a 29-module market terminal covering equities, options, fixed income, commodities, crypto, portfolio analytics, sentiment, and geopolitical risk. Everything markup, styles, and logic lives in one .html file.
 This makes it trivially portable: download the file, double-click it, and the terminal boots. It also makes it a useful teaching artifact for demonstrating that a serious-looking financial dashboard doesn't require a server stack to be functional most of what people associate with a "terminal" is UI density and data modeling, not backend complexity.
@@ -26,13 +26,13 @@ function switchModule(id, btn) {
   // ...one line per module
 }
 ```
-# Nexus — Changelog
+# Nexus Changelog
 
 A complete version history of the Nexus Financial Terminal, from initial concept through each build iteration.
 
 ---
 
-## v1.0 — Initial Build
+## v1.0 Initial Build
 **The Bloomberg Terminal Clone**
 
 The original upload. A single-file Bloomberg-style financial dashboard in vanilla JavaScript with no build step, no backend, no dependencies beyond Chart.js and Leaflet loaded from CDN.
@@ -64,24 +64,24 @@ The original upload. A single-file Bloomberg-style financial dashboard in vanill
 
 ---
 
-## v2.0 — Four New Modules
+## v2.0 Four New Modules
 **Options Chain, Dark Pool, Macro Heat Map, Correlation Lab**
 
 Added four modules to fill gaps in the original market coverage.
 
 **What changed:**
-- `OPTIONS CHAIN` — Full call/put ladder for any ticker. Enter a symbol, select expiry, see strike-by-strike bid/ask, IV, delta, volume, OI with depth bars. IV ticks every 3 seconds. Real API: Polygon options contracts endpoint, pre-wired.
-- `DARK POOL` — Off-exchange block trade flow tape. Shows sweeps and blocks with symbol, type (call/put/block), expiry, strike, premium, and bullish/bearish sentiment. Filterable by sweep, block, bullish, bearish. Live tick every 4 seconds. Sentiment heatmap for top 10 symbols. Top symbols by premium in right panel.
-- `MACRO HEAT MAP` — 20-country macroeconomic heat map across 5 metrics (GDP growth, CPI inflation, policy rate, unemployment, debt/GDP). Color-coded by health. Click any country for a detail panel with commentary. Region average bar chart.
-- `CORRELATION LAB` — User-defined asset basket (default: AAPL, MSFT, NVDA, BTC, JPM). N×N correlation matrix with color encoding from -1 to +1. Diversification score. Add/remove tickers dynamically.
+- `OPTIONS CHAIN` Full call/put ladder for any ticker. Enter a symbol, select expiry, see strike-by-strike bid/ask, IV, delta, volume, OI with depth bars. IV ticks every 3 seconds. Real API: Polygon options contracts endpoint, pre-wired.
+- `DARK POOL` Off-exchange block trade flow tape. Shows sweeps and blocks with symbol, type (call/put/block), expiry, strike, premium, and bullish/bearish sentiment. Filterable by sweep, block, bullish, bearish. Live tick every 4 seconds. Sentiment heatmap for top 10 symbols. Top symbols by premium in right panel.
+- `MACRO HEAT MAP` 20-country macroeconomic heat map across 5 metrics (GDP growth, CPI inflation, policy rate, unemployment, debt/GDP). Color-coded by health. Click any country for a detail panel with commentary. Region average bar chart.
+- `CORRELATION LAB` User-defined asset basket (default: AAPL, MSFT, NVDA, BTC, JPM). N×N correlation matrix with color encoding from -1 to +1. Diversification score. Add/remove tickers dynamically.
 
 **Bug fixes:**
-- Fixed tab navigation breaking due to `const _origSwitch = switchModule` wrapper pattern conflicting with JS hoisting — removed wrapper, integrated all module init calls directly inside `switchModule()` body
-- Stripped all non-ASCII characters from the codebase (arrows, degree symbols, currency glyphs, etc.) to prevent encoding issues across environments
+Fixed tab navigation breaking due to `const _origSwitch = switchModule` wrapper pattern conflicting with JS hoisting removed wrapper, integrated all module init calls directly inside `switchModule()` body
+Stripped all non-ASCII characters from the codebase (arrows, degree symbols, currency glyphs, etc.) to prevent encoding issues across environments
 
 ---
 
-## v3.0 — API Documentation
+## v3.0 API Documentation
 **Full developer documentation for all modules and integrations**
 
 Produced a standalone `Nexus_Documentation.html` covering:
@@ -97,38 +97,38 @@ Produced a standalone `Nexus_Documentation.html` covering:
 
 ---
 
-## v4.0 — 19-Module Intelligence Expansion
+## v4.0 19-Module Intelligence Expansion
 **The largest single update — doubled the module count**
 
 Added 19 modules across 5 new navigation groups. Total: 29 modules.
 
 ### INTELLIGENCE group
-- `EARNINGS CALENDAR` — Upcoming and recent earnings with EPS estimate vs actual, revenue estimate vs actual, and surprise %. Filterable by ALL / BEAT / MISS / UPCOMING and by sector.
-- `SHORT INTEREST MONITOR` — Short interest % of float, days-to-cover, borrow rate, and a computed squeeze score for the most-shorted names. Squeeze alert filter.
-- `INSIDER TRANSACTIONS` — SEC Form 4–style insider transaction feed (CEO/CFO/Director buys and sells). Net insider buying by ticker chart. Filterable by ALL / BUYS / SELLS / CEO/CFO.
-- `SENTIMENT DASHBOARD` — Fear & Greed index with gauge, VIX term structure, put/call ratio history (20D), AAII bull/bear survey donut, market breadth indicators, sentiment indicators table.
-- `SOCIAL SENTIMENT` — Trending tickers ranked by social mention volume with sentiment score, price change, and divergence signal (when price and sentiment disagree). 24-hour mention volume chart and live social feed.
-- `SECTOR ROTATION` — 11 sector ETF performance across 1D/1W/1M/3M/YTD. Bar chart re-sorts on period toggle. Economic cycle clock (canvas-drawn) showing phase. Rotation signal panel.
+- `EARNINGS CALENDAR` Upcoming and recent earnings with EPS estimate vs actual, revenue estimate vs actual, and surprise %. Filterable by ALL / BEAT / MISS / UPCOMING and by sector.
+- `SHORT INTEREST MONITOR` Short interest % of float, days-to-cover, borrow rate, and a computed squeeze score for the most-shorted names. Squeeze alert filter.
+- `INSIDER TRANSACTIONS` SEC Form 4–style insider transaction feed (CEO/CFO/Director buys and sells). Net insider buying by ticker chart. Filterable by ALL / BUYS / SELLS / CEO/CFO.
+- `SENTIMENT DASHBOARD` Fear & Greed index with gauge, VIX term structure, put/call ratio history (20D), AAII bull/bear survey donut, market breadth indicators, sentiment indicators table.
+- `SOCIAL SENTIMENT` Trending tickers ranked by social mention volume with sentiment score, price change, and divergence signal (when price and sentiment disagree). 24-hour mention volume chart and live social feed.
+- `SECTOR ROTATION` 11 sector ETF performance across 1D/1W/1M/3M/YTD. Bar chart re-sorts on period toggle. Economic cycle clock (canvas-drawn) showing phase. Rotation signal panel.
 
 ### FIXED INCOME group
-- `YIELD CURVE` — US Treasury yield curve (1M to 30Y) with historical overlays: 1Y ago, 2Y ago, Pre-2008. 2Y-10Y and 3M-10Y spread KPIs, inversion flag. 30-day spread history chart.
-- `BOND SCREENER` — 15 bonds covering government, IG corporate, high-yield, and municipal. Filterable by type, rating (AAA through CCC), and maturity (short/mid/long). YTM, duration, coupon, price displayed.
-- `CREDIT SPREADS` — IG and HY OAS spread history (60 weeks) with a side-by-side equity drawdown comparison chart and spread metrics table.
+- `YIELD CURVE` US Treasury yield curve (1M to 30Y) with historical overlays: 1Y ago, 2Y ago, Pre-2008. 2Y-10Y and 3M-10Y spread KPIs, inversion flag. 30-day spread history chart.
+- `BOND SCREENER` 15 bonds covering government, IG corporate, high-yield, and municipal. Filterable by type, rating (AAA through CCC), and maturity (short/mid/long). YTM, duration, coupon, price displayed.
+- `CREDIT SPREADS` IG and HY OAS spread history (60 weeks) with a side-by-side equity drawdown comparison chart and spread metrics table.
 
 ### COMMODITIES group
-- `COMMODITIES DASHBOARD` — Energy (WTI, Brent, Nat Gas, RBOB, Heating Oil), Metals (Gold, Silver, Copper, Platinum, Palladium), and Agriculture (Corn, Soy, Wheat, Coffee, Sugar) panels each with a 20-day price history chart.
-- `ON-CHAIN ANALYTICS` — BTC on-chain metrics switchable between MVRV ratio, NVT signal, exchange netflow, and active addresses as 60-day time series. Miner revenue bar chart. Signal interpretation panel.
-- `FUTURES CURVE` — Forward curve for WTI, Brent, Nat Gas, Gold, Copper, Wheat from Spot through M+24. Contango shown in red, backwardation in green. Roll yield displayed. Contract table.
+- `COMMODITIES DASHBOARD` Energy (WTI, Brent, Nat Gas, RBOB, Heating Oil), Metals (Gold, Silver, Copper, Platinum, Palladium), and Agriculture (Corn, Soy, Wheat, Coffee, Sugar) panels each with a 20-day price history chart.
+- `ON-CHAIN ANALYTICS` BTC on-chain metrics switchable between MVRV ratio, NVT signal, exchange netflow, and active addresses as 60-day time series. Miner revenue bar chart. Signal interpretation panel.
+- `FUTURES CURVE` Forward curve for WTI, Brent, Nat Gas, Gold, Copper, Wheat from Spot through M+24. Contango shown in red, backwardation in green. Roll yield displayed. Contract table.
 
 ### PORTFOLIO group
-- `BACKTESTER` — Portfolio backtester with configurable start/end year and benchmark (SPY/QQQ/60-40). Default: AAPL 30% / MSFT 25% / NVDA 20% / JPM 15% / GLD 10%. Outputs cumulative return chart, drawdown chart, annual returns, Sharpe, Sortino, Calmar, max drawdown, alpha, beta.
-- `OPTIONS P&L CALCULATOR` — 8 strategy templates (Covered Call, Protective Put, Straddle, Strangle, Bull Call Spread, Bear Put Spread, Iron Condor, Butterfly) priced with Black-Scholes. Interactive payoff diagram with break-evens, max gain/loss, all 5 Greeks, and a plain-language strategy explanation.
-- `TAX LOT TRACKER` — Cost basis tracking with FIFO, LIFO, HIFO, Specific ID methods. Short-term vs long-term gain/loss breakdown pie chart. Wash sale alert detection. Tax optimization suggestions with estimated liability.
+- `BACKTESTER` Portfolio backtester with configurable start/end year and benchmark (SPY/QQQ/60-40). Default: AAPL 30% / MSFT 25% / NVDA 20% / JPM 15% / GLD 10%. Outputs cumulative return chart, drawdown chart, annual returns, Sharpe, Sortino, Calmar, max drawdown, alpha, beta.
+- `OPTIONS P&L CALCULATOR` 8 strategy templates (Covered Call, Protective Put, Straddle, Strangle, Bull Call Spread, Bear Put Spread, Iron Condor, Butterfly) priced with Black-Scholes. Interactive payoff diagram with break-evens, max gain/loss, all 5 Greeks, and a plain-language strategy explanation.
+- `TAX LOT TRACKER` Cost basis tracking with FIFO, LIFO, HIFO, Specific ID methods. Short-term vs long-term gain/loss breakdown pie chart. Wash sale alert detection. Tax optimization suggestions with estimated liability.
 
 ### GLOBAL group
-- `GEOPOLITICAL RISK MONITOR` — 12 countries scored across overall risk, conflict level, sanctions exposure, and supply chain impact. Grid re-sorts and recolours by mode. Click any country for risk drivers and active alerts.
-- `TRADE FLOW MAP` — Top 10 global trade corridors by value with commodity-type breakdown (oil, tech, food, metals). Status of 5 maritime chokepoints (Suez, Hormuz, Malacca, Panama, Gibraltar).
-- `FX INTERVENTION TRACKER` — 8 currencies with FX reserves, reserve changes (30D), REER vs nominal, and intervention status. Three views: FX Reserves, REER vs Nominal, Watchlist. Bar chart + signal panel + US Treasury manipulation watchlist.
+- `GEOPOLITICAL RISK MONITOR` 12 countries scored across overall risk, conflict level, sanctions exposure, and supply chain impact. Grid re-sorts and recolours by mode. Click any country for risk drivers and active alerts.
+- `TRADE FLOW MAP` Top 10 global trade corridors by value with commodity-type breakdown (oil, tech, food, metals). Status of 5 maritime chokepoints (Suez, Hormuz, Malacca, Panama, Gibraltar).
+- `FX INTERVENTION TRACKER` 8 currencies with FX reserves, reserve changes (30D), REER vs nominal, and intervention status. Three views: FX Reserves, REER vs Nominal, Watchlist. Bar chart + signal panel + US Treasury manipulation watchlist.
 
 **Navigation structure added:**
 ```
@@ -146,7 +146,7 @@ GLOBAL       — Geo Risk, Trade Flow, FX Intervention
 
 ---
 
-## v5.0 — User Stories, Help System & Export
+## v5.0 User Stories, Help System & Export
 **Production-readiness features based on formal user stories**
 
 Five user stories implemented.
