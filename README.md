@@ -190,7 +190,7 @@ Full version history is in [CHANGELOG.md](./CHANGELOG.md). Summary:
 
 | Version | What changed |
 |---|---|
-| **v1.0** | Initial build — Bloomberg-style terminal, 10 modules across 4 nav groups, aircraft/vessel tracking, Aladdin risk engine, AI analyst overlay |
+| **v1.0** | Initial build terminal, 10 modules across 4 nav groups, aircraft/vessel tracking, Aladdin risk engine, AI analyst overlay |
 | **v2.0** | Options Chain, Dark Pool flow tape, Macro Heat Map (20 countries), Correlation Lab. Fixed tab navigation bug. Removed all non-ASCII characters. |
 | **v3.0** | Full API and developer documentation (`Nexus_Documentation.html`) |
 | **v4.0** | 19 new modules across 5 new nav groups (Intelligence, Fixed Income, Commodities, Portfolio, Global). Total: 29 modules. |
