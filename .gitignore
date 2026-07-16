@@ -1,0 +1,19 @@
+﻿.env
+.env.newsapi
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+# Cache and generated data files
+price_cache.json
+fx_cache.json
+rates_cache.json
+macro_cache.json
+commodities_cache.json
+sectors_cache.json
+news_cache.json
+all_data_cache.json
+portfolio_holdings.json
