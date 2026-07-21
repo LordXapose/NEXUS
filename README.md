@@ -5,7 +5,7 @@ This makes it trivially portable: download the file, double-click it, and the te
 
 ## Status
 
-Frontend: complete, runs standalone with synthetic/demo data, no build step required.
+Frontend: complete, runs standalone with Real data, no build step required.
 Backend: in progress.
 
 ## Architecture
@@ -35,7 +35,7 @@ A complete version history of the Nexus Financial Terminal, from initial concept
 ## v1.0 Initial Build
 **The Bloomberg Terminal Clone**
 
-The original upload. A single-file Bloomberg-style financial dashboard in vanilla JavaScript with no build step, no backend, no dependencies beyond Chart.js and Leaflet loaded from CDN.
+The original upload. A single-file financial Analysis dashboard in vanilla JavaScript with no build step, no backend, no dependencies beyond Chart.js and Leaflet loaded from CDN.
 
 **What was in v1:**
 - Top bar with animated scrolling ticker (15 symbols — equities, crypto, FX, commodities)
@@ -55,7 +55,7 @@ The original upload. A single-file Bloomberg-style financial dashboard in vanill
 - Status bar
 
 **Architecture established:**
-- Single HTML file — `<style>` + `<body>` + `<script>`, no build
+- Single HTML file `<style>` + `<body>` + `<script>`, no build
 - Module system: `div.module` elements toggled by `.active` class, routed through `switchModule(id, btn)`
 - Lazy initialization: each module only boots on first click, tracked by boolean flags
 - CSS design tokens: `--bg` through `--bg5`, `--amber`, `--green`, `--red`, `--blue`, `--purple`, `--text` through `--text4`, `--border` through `--border3`
@@ -98,7 +98,7 @@ Produced a standalone `Nexus_Documentation.html` covering:
 ---
 
 ## v4.0 19-Module Intelligence Expansion
-**The largest single update — doubled the module count**
+**The largest single update doubled the module count**
 
 Added 19 modules across 5 new navigation groups. Total: 29 modules.
 
@@ -167,9 +167,9 @@ Five user stories implemented.
 
 ### Portfolio Export (Story: Export portfolio data)
 Added to the Aladdin Risk module toolbar (EXPORT CSV / EXPORT JSON / EXPORT PDF):
-- **CSV** — All positions with symbol, name, sector, quantity, cost basis, current price, market value, P&L, return %, and weight. Risk summary appended below (NAV, VaR, Sharpe, volatility, beta, compliance breaches, export timestamp).
-- **JSON** — Structured payload with `meta` (risk summary) and `positions` array.
-- **PDF** — Print-ready HTML report opened via blob URL in a new tab. Auto-triggers browser print dialog (`window.onload = print()`). Landscape A4 layout with NEXUS logo header, 6-column KPI grid, positions table, sector allocation bar chart, key metrics table, footer. User saves as PDF through browser Print → Save as PDF.
+- **CSV** All positions with symbol, name, sector, quantity, cost basis, current price, market value, P&L, return %, and weight. Risk summary appended below (NAV, VaR, Sharpe, volatility, beta, compliance breaches, export timestamp).
+- **JSON** Structured payload with `meta` (risk summary) and `positions` array.
+- **PDF** Print-ready HTML report opened via blob URL in a new tab. Auto-triggers browser print dialog (`window.onload = print()`). Landscape A4 layout with NEXUS logo header, 6-column KPI grid, positions table, sector allocation bar chart, key metrics table, footer. User saves as PDF through browser Print → Save as PDF.
 
 ### News & Macro (Story: Consolidated news feed)
 Already complete in v1. Confirmed: items appear newest-first with timestamp and source, macro indicators and scheduled events included alongside headlines in the Economic Calendar sub-tab.
