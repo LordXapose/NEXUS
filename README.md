@@ -201,9 +201,9 @@ Full version history is in [CHANGELOG.md](./CHANGELOG.md). Summary:
 
 ```
 Nexus_v5.html
-├── <style>   ~600 lines   — CSS custom properties, layout, all component classes
-├── <body>    ~1400 lines  — 29 module panels + Help + API Health + Options P&L = 32 panels total
-└── <script>  ~2700 lines  — flags, utilities, all module init/render functions, export, boot
+├── <style>   600 lines   — CSS custom properties, layout, all component classes
+├── <body>    1400 lines  — 29 module panels + Help + API Health + Options P&L = 32 panels total
+└── <script>  2700 lines  — flags, utilities, all module init/render functions, export, boot
 ```
 
 **Dependencies (CDN only):**
