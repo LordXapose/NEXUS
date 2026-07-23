@@ -270,7 +270,7 @@ Here's every topic explained in **one simple line**:
 ## Tech stack
 
 
-## Backend (planned)
+## Backend
 
 A Python backend will sit behind this frontend to:
 
