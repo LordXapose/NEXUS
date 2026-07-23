@@ -1,6 +1,6 @@
 # NEXUS TERMINAL
 
-**A Bloomberg/Aladdin-style financial terminal that runs from a single HTML file, backed by a Python risk engine that pulls real market data from free public sources.**
+** A financial terminal that runs from a single HTML file, backed by a Python risk engine that pulls real market data from free public sources.**
 
 30 modules. Zero build step. Zero paid API keys. Zero npm.
 
