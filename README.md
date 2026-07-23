@@ -9,7 +9,7 @@
 
 A Bloomberg Terminal seat runs somewhere around **$30,000 a year**. BlackRock's Aladdin isn't even sold to individuals it's an institutional platform with a minimum contract that assumes you're managing billions. Between them, they define what "professional-grade market software" looks like: dense monochrome-on-black panels, keyboard-driven navigation, a hundred data views one tab away from each other, and a risk engine humming underneath all of it.
 
-The result is that almost nobody outside a bank or a fund has ever actually *used* one. You can read about Value-at-Risk in a textbook. You can compute a covariance matrix in a Jupyter notebook. But you never get to sit in front of the thing where a VaR breach, a compliance flag, a stress scenario, and the position that caused all three are on the same screen at the same time — which is the entire point of a terminal, and the part no textbook conveys.
+The result is that almost nobody outside a bank or a fund has ever actually *used* one. You can read about Value-at-Risk in a textbook. You can compute a covariance matrix in a Jupyter notebook. But you never get to sit in front of the thing where a VaR breach, a compliance flag, a stress scenario, and the position that caused all three are on the same screen at the same time which is the entire point of a terminal, and the part no textbook conveys.
 
 **Nexus is my attempt to build that thing from scratch, and to learn quantitative finance by implementing it rather than reading about it.**
 
@@ -78,7 +78,7 @@ The global aircraft and vessel tracking modules are the one piece that isn't str
 └──────────────────────────────────────────────────────────────┘
 ```
 
-The decoupling is intentional. The downloader can run on a cron at 6am and the API never blocks on a network call, because it only ever reads local CSVs. The front end can run entirely standalone — open the HTML with no backend at all and every module still renders with demo data, which is what makes it shareable as a single file.
+The decoupling is intentional. The downloader can run on a cron at 6am and the API never blocks on a network call, because it only ever reads local CSVs. The front end can run entirely standalone open the HTML with no backend at all and every module still renders with demo data, which is what makes it shareable as a single file.
 
 ---
 
@@ -247,7 +247,7 @@ Minimum columns: `symbol, shares, avg_cost`. Hit `/api/schema` for the full spec
 I'd rather be explicit about this than have you find out by trusting a number.
 
 **Real, pulled from live sources**
-Equity/ETF/FX/futures prices · 5y OHLCV history · options chains · Treasury yield curve · US macro & credit spreads · 20-country World Bank macro · crypto prices · news headlines · **every risk metric in the engine — VaR, CVaR, correlation, risk contribution, Monte Carlo, stress tests**
+Equity/ETF/FX/futures prices · 5y OHLCV history · options chains · Treasury yield curve · US macro & credit spreads · 20-country World Bank macro · crypto prices · news headlines · **every risk metric in the engine VaR, CVaR, correlation, risk contribution, Monte Carlo, stress tests**
 
 **Simulated in-browser (structurally realistic, not real)**
 Order book depth and trade prints · dark pool flow · insider transactions · short interest · sentiment and social sentiment · aircraft and vessel positions · options chain when the API is offline · several intelligence modules
