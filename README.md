@@ -4,8 +4,6 @@
 
 30 modules. Zero build step. Zero paid API keys. Zero npm.
 
-![Nexus Terminal](image.png)
-
 ---
 
 ## Why this exists
