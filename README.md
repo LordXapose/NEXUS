@@ -180,7 +180,7 @@ Marginal contribution to risk, correctly decomposed. A 3% crypto sleeve can carr
 
 **Monte Carlo** 20,000 paths over a 252-day horizon, sampled from the portfolio's actual multivariate normal `(μ, Σ)`, seeded at 42 for reproducibility. Exports percentiles plus 100 sample paths to `mc_paths.json` for the fan chart.
 
-**Stress testing** eight published drawdown benchmarks (2008 GFC, COVID 2020, dot-com, 2022 rate shock, 9/11, Black Monday, Eurozone crisis, taper tantrum) applied as equity/bond/credit/FX/commodity shocks to bucketed positions.
+**Stress testing** eight published drwdown benchmarks (2008 GFC, COVID 2020, dot-com, 2022 rate shock, 9/11, Black Monday, Eurozone crisis, taper tantrum) applied as equity/bond/credit/FX/commodity shocks to bucketed positions.
 
 **Compliance** 8 rules covering single-position concentration, sector caps, minimum fixed income, VaR limit, max drawdown, and a no-shorts block. Edit `data/compliance_rules.csv` to change the mandate.
 
